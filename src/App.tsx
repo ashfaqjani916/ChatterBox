@@ -1,7 +1,8 @@
 // import { useEffect, useState } from 'react'
 import './App.css'
-// import ContactCard from './components/ContactCard'
+import ContactCard from './components/ContactCard'
 import { Button } from './components/ui/button'
+import { FiLogOut } from 'react-icons/fi'
 
 // import { app } from './firebase'
 // import { Box, Button, Container, VStack, Input, HStack } from '@chakra-ui/react'
@@ -59,7 +60,22 @@ function App() {
     <>
       <div className="appbody">
         <div className="menu">
-          <Button>Click me</Button>
+          <div className="logo">
+            <div className="avatar">
+              <img src="/logo.png" />
+            </div>
+            <div className="heading">ChatterBox</div>
+          </div>
+          <div className="contacts">
+            <ContactCard />
+          </div>
+          <div className="options">
+            <div style={{ marginLeft: '80%' }}>
+              <Button>
+                <FiLogOut />
+              </Button>
+            </div>
+          </div>
         </div>
         <div className="chatarea"> </div>
       </div>

@@ -1,0 +1,15 @@
+.card{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+
+
+.card-avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right:10px ;
+}
