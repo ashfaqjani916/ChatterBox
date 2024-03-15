@@ -1,0 +1,22 @@
+.appbody{
+  display: flex;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color:whitesmoke;
+  height: 100vh;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+.chatarea{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  background-image: url("/chatbg.jpg");
+  opacity: 60%;
+}
+
