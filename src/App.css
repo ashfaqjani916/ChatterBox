@@ -67,3 +67,17 @@
   align-items: center;
   padding: 10px;
 }
+
+
+
+form{
+  display: flex;
+}
+
+.textarea{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100%;
+  padding: 20px;
+}

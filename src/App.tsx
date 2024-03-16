@@ -1,6 +1,8 @@
 // import { useEffect, useState } from 'react'
+import { Input } from '@chakra-ui/react'
 import './App.css'
 import ContactCard from './components/ContactCard'
+import Message from './components/Message'
 import { Button } from './components/ui/button'
 import { FiLogOut } from 'react-icons/fi'
 
@@ -77,7 +79,16 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="chatarea"> </div>
+        <div className="chatarea">
+          <div className="textarea">
+            <Message text={'hellooo'} user="me" />
+            <Message text="hiii" user="other" />
+          </div>
+          <form>
+            <Input placeholder="Enter a message..." bg={'rgba(12,135,205,255)'} textColor={'whitesmoke'} />
+            <Button type="submit">Send</Button>
+          </form>
+        </div>
       </div>
     </>
   )
